@@ -1,0 +1,187 @@
+
+## This file is a cheatsheet of git & github basic commands.
+
+## YOU CAN ALSO VISIT MY NOTION AND SAVE THE FILE
+LNOTION LINK - https://www.notion.so/GitHub-basic-commands-and-theory-1d5d3dfde22580f7ace8e84d48f5c2f7?pvs=4
+
+
+
+TO USE WHEN WE ARE CREATING FILE ON GITHUB / GIT
+
+## Clone - cloning a repo on local machine
+**git clone <some link>**
+
+## Status - display the state of code
+**git status**
+
+Four types :
+
+1. Untracked - new files that guy doesn't yet track
+2. Modified - some changes happened in file on local machine but not commited to git
+3. Staged - file is ready to commit
+4. Unmodified - unchanged
+
+## Terminal command - 
+cd (change directory ) to open a file or directory 
+**cd <folder name>**
+Eg . CD manualtestingwithneel - demo
+
+**cd ..** - to get out of that file or directory 
+
+**ls** (Ls) - list file , list down all file in folder
+
+**ls -a**   :: to see every folder even hidden one only used in terminal
+
+## add - adds new or changed file in your working directory to the git staging area
+**git add <file name>**
+Eg , git add index.html
+
+If we have multiple files which needed to be staged we can simply use this prompt and all the files will get staged
+**git add .**  
+NOTE - THAT DOT IS IMP
+
+## commit - it is the record of changes
+**git commit** -m “some meaningful message for further reference”
+
+## push - upload local repo content to remote repo
+**git push origin main**
+
+If doing it first time in vs code or compiler will ask for permission we will have to allow it 
+
+1. git push - normal command
+
+2. origin - a name given to default repo on the remote machine (we can keep something else too)
+
+3. main - branch name
+
+--
+
+TO USE WHEN WE ARE CREATING FILE ON LOCAL 
+
+## **init** - used to create a new git repo (to initialise git in a project)
+
+Command line code : mkdir (to create a new sub directory)
+**mkdir <file name>** ….. mkdir Localrepo
+
+To convert this folder into git repo
+
+Type — git init (do when you are in the file you want to create a repo)
+
+Now to add directory from local to remote
+
+**Remember when creating repo where (local to remote) don't add readme.nd as we will have to bring it to local then**
+
+**git remote add origin <repo link**>
+
+**git remote -v**   :: to verify remote
+
+**git branch**   :: to check branch 
+
+It will give branch name as **master** as default which we will have to change it as the branch name is moved to main as default 
+
+To rename branch name ::
+**git branch -M main**
+
+**git push -u origin main**
+
+-u :: means to set upstream
+
+It means if we are working on same project for long time and when we have to push it on GitHub no need to write origin main repeatedly 
+
+In future just use **git push**
+
+--
+
+GIT BRANCHES
+
+In git branches are a part of your every day development process. Git branches are effectively a pointer to a snapshot of your changes . 
+When you want to add a new feature or fix a bug no matter how big or small you spawn a new branch to encapsulate your changes.
+
+In short branches is used to create, changes or debug same time by different person without waiting for someone else to complete their work.
+
+Branch commands ::
+
+• **git branch** - to check which branch we are in 
+
+• **git branch** -M main :: to rename branch
+
+• **git checkout <branch name>**  :: to navigate 
+
+• **git checkout -b <new branch name>**  :: to create new branch 
+
+• **git branch -d <branch name>**  :: to delete a branch
+
+Note - can not delete a branch of you are on that branch shift on some other branch and delete
+
+Merging code after changes in development 
+
+## Way 1 :: using command line or git
+
+1. **git diff <branch name>**  :: shows difference in branch , commits ,files and more 
+2. **git merge <branch name>**  :: to merge 2 branches 
+
+## Way 2  :: using GitHub 
+
+Pull request   :: it lets you tell others about changes you have pushed to a branch in a repository on GitHub
+
+• **git pull origin main**   :: to download or fetch content from remote repo and immediately update it on local repo to match the content
+
+--
+
+Resolving merge conflicts
+
+An event that takes place when git is unable to automatically resolve differences in code between two commits 
+
+Suppose im working on main branch and added a button feature but in feature 1 I added a drop down option  on same line or on same feature line 
+
+Git can commit it by individual but at time of merging it will show error or CONFLICTS
+
+--
+
+UNDOING CHANGES 
+
+## Case 1. Staged changes (add changes)
+
+Suppose we erased a feature and staged it but we realised we needed it then ..
+
+Use ::
+
+**git reset <file name>** :: for same file or
+
+git reset   :: for all the files
+
+## Case 2. Committed changes 
+
+Suppose we deleted a feature added it and committed it
+
+**git reset HEAD~1**
+
+Used for single comment change 
+
+## Case 3. Committed changes for multiple commits 
+
+**git reset <commit hash>**
+
+To check history of commit :: **git log**
+
+Commit hash can be found in git log 
+
+**git reset —hard <commit hash>**
+
+To Remove changes from vs code and git
+
+--
+
+FORK
+
+A fork is a new repo that shares code and visibility settings with the original “upstream” repo
+
+It is a rough copy 
+
+Used to work on someone else work or a company repo 
+
+ It is done on GitHub using fork option 
+
+Changes done in those files will be saved on our files 
+
+To upload it on Maine owner files do a pull request.
