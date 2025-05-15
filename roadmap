@@ -1,0 +1,35 @@
+# roadmap
+
+Topics can differ in actual files but all basic will be covered.
+1. Foundations	
+  - What is Testing?
+  - SDLC & STLC
+  - Testing Principles
+  - Types of Testing	
+
+2. Test Documentation	
+- Test Plan
+- Test Case
+- Test Scenario
+- Traceability Matrix	
+
+3. Test Techniques	
+- Black Box Testing
+- Equivalence Partitioning
+- Boundary Value Analysis
+- Decision Table & State Transition
+
+4. Defect Life Cycle	
+- Bug Lifecycle
+- Severity vs Priority
+- Bug Report Writing	
+
+5. Test Management Tools	
+- Jira (Main focus)
+- TestLink / Xray / Zephyr	
+
+6. Real-World Scenarios	
+- E-commerce Testing
+- Login System Testing
+- Payment Gateway Testing
+- API Testing Basics (Manual)	
