@@ -1,0 +1,62 @@
+
+# ✅ 1. What is the Agile Model?
+Agile is a flexible and iterative software development model that focuses on:
+
+Customer satisfaction
+Frequent delivery of working software
+Close collaboration between teams
+Responding to change even in late development
+
+💡 Key Idea: Instead of building the whole product in one go (like Waterfall), Agile builds it in small parts called increments — typically every 1–4 weeks.
+
+# ✅ 2. Why Agile? (What Problem Does It Solve?)
+
+Problem in Traditional Models	                               Agile Solution
+Requirements change often	                               Agile embraces change
+Clients wait months for delivery                         Agile delivers working parts in 2 weeks
+Testers join late	                                       Testers join from day 1
+Developers/testers work in silos	                       Agile uses cross-functional teams
+Low visibility	                                         Agile gives daily updates (Scrum, Standups)
+
+# ✅ 3. Agile Principles (from the Agile Manifesto)
+Out of the 12 core principles, testers should focus on these:
+
+Principle                                             	Why It Matters for Testers
+Customer satisfaction through early delivery        	Testers ensure quality from the start
+Welcome changing requirements	                        Testers update test cases with each change
+Deliver working software frequently	                  Test cases are executed in every sprint
+Continuous collaboration	                            Testers, Devs, and PO work together closely
+Simplicity	                                          Keep test cases clear and lean
+
+# ✅ 4. Roles in Agile Scrum (as you’ll see them in a job)
+Role	Responsibilities
+Product Owner (PO)	Writes user stories, sets priorities
+Scrum Master	Facilitates meetings, removes blockers
+Development Team	Builds the product — includes devs & testers
+
+👉 Your Role as a Tester:
+
+Clarify user stories & acceptance criteria
+Write test cases based on them
+Test the functionality within the sprint
+Log bugs, reverify after fixes
+Collaborate in meetings (daily scrum, review, retro)
+
+# ✅ 5. Agile Work Items (you will deal with as a tester):
+Work Item                                  	Explanation
+User Story                           	Feature request written from user’s perspective
+Epic	                                Big feature (broken into stories)
+Bug	                                  Issue found during testing
+Task	                                Development or testing activity
+Sprint	                              1-2 week work cycle
+
+# ✅ 6. Agile Ceremonies/Tester's Role
+
+Ceremony	                                 Tester's Role
+Sprint Planning                     	Understand stories, ask questions
+Daily Standup	                        Share what you tested, blockers
+Sprint Review	                        Verify if features are working
+Sprint Retrospective	                Share what worked and what didn't in testing
+
+\\\
+
