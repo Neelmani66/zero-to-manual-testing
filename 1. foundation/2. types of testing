@@ -1,0 +1,163 @@
+
+# 🗂️ Classification of Testing Types
+To learn testing like an expert, we must not memorize types. Instead, we understand their context — where they're used in the project lifecycle, and why.
+
+Let’s break this into 4 major classifications:
+
+Classification                           	Types of Testing
+1. By Execution	                     Manual Testing, Automation Testing
+2. By Level (in SDLC)	               Unit, Integration, System, Acceptance
+3. By Knowledge	                     Black Box, White Box, Grey Box
+4. By Purpose / Focus	               Functional, Non-Functional (Performance, Security, Usability, etc.), Maintenance, Regression, Smoke, Sanity, etc.
+
+\\\
+
+#  Testing by Execution Mode
+
+## 🧪 A. Manual Testing
+Definition: Testing done manually without using any automation tools.
+
+Who uses it: Entry-level QA, Business Testers, Product Teams.
+
+When to use:
+
+UI/UX testing
+Early-stage products (MVPs)
+Projects with frequent changes
+
+Pros:
+
+Easier to catch UI bugs, experience issues
+Flexible for exploratory testing
+
+Cons:
+
+Time-consuming
+Prone to human error
+
+💡 Real-life scenario:
+A food delivery app introduces a new UI for restaurant listings.
+A manual tester will explore every flow like "sort by rating," "apply filters," etc., and validate if they're intuitive and bug-free.
+
+## 🤖 B. Automation Testing
+Definition: Using tools/scripts to perform tests automatically.
+
+Tools: Selenium, Cypress, Playwright, Appium, TestNG, JUnit
+
+Used for:
+
+Regression testing
+Smoke/sanity testing in CI/CD
+Load testing at scale
+
+When to use:
+
+Stable features with repeated test cases
+CI pipelines for frequent deployments
+
+Challenges:
+
+Initial setup is expensive
+Needs programming knowledge
+
+✅ Example: In Flipkart, price filtering is a stable feature. 
+QA writes Selenium test scripts to check price filter logic across thousands of product listings every release.
+
+\\\
+
+# Testing by Level (Tied to SDLC phases)
+
+Level	                                   Focus	                      Tested By                            	Tools Used
+Unit Testing                   	Single function/module	             Developers	                        JUnit, NUnit, pytest
+Integration Testing           	Interaction between modules	         Developers/QA	                    Postman, SOAP UI
+System Testing	                Entire app	                         QA                               	Manual + automation tools
+Acceptance Testing	            User/business expectations	         UAT Team, Stakeholders           	Manual only (based on business scenarios)
+
+## 🧩 A. Unit Testing
+Granular: individual units like functions/classes.
+
+Prevents low-level bugs.
+
+Devs write these before handing code to QA.
+
+## 🔗 B. Integration Testing
+Check data flow between modules.
+
+APIs, DB interactions, service dependencies are tested.
+
+## 🖥️ C. System Testing
+End-to-end flow testing (app as a whole).
+
+Functional + non-functional checks included.
+
+## 🧑‍💼 D. Acceptance Testing (UAT)
+Final check before going live.
+
+Example: Client tests if “invoice feature” works exactly as they want.
+
+\\\
+
+# Testing by Knowledge of Code
+
+## ⚫ A. Black Box Testing
+Tester doesn't know internal logic.
+
+Focus on input-output behavior.
+
+Done by: Manual testers, Functional QA
+
+Examples:
+
+Login feature with correct/incorrect credentials
+
+Form validation
+
+## ⚪ B. White Box Testing
+Tester knows internal code.
+
+Focus on logic, loops, conditions.
+
+Done by: Developers, Test Engineers with code access
+
+Types include:
+
+Statement coverage
+Branch coverage
+Path coverage
+
+## ⚫⚪ C. Grey Box Testing
+Partial knowledge of internal logic.
+
+Done in:
+
+Integration testing
+Security testing (e.g., knowing database structure)
+
+\\\
+
+# Testing by Purpose / Objective
+
+## ✅ Functional Testing
+
+Validates “what the system does”.
+Based on business requirements.
+Techniques: BVA, EP, Decision Table
+
+## 🚀 Non-Functional Testing
+Type	                                  Purpose	                               Tools
+Performance                     Testing	Speed & stability	                JMeter, LoadRunner
+Load Testing	                  System under expected user load	          Apache JMeter
+Stress Testing                	System under extreme load	                BlazeMeter
+Usability Testing	              User-friendliness                       	Manual observation
+Security Testing               	Vulnerability check                     	Burp Suite, OWASP ZAP
+
+## 🔄 Maintenance Testing Types
+Type	                                  Purpose
+Regression Testing	            Ensures new features don’t break old ones
+Retesting	                      Confirm fixed bug actually works
+Sanity Testing                	Quick high-level check of new features
+Smoke Testing                  	Basic check to see if build is stable
+
+\\\
+
+
