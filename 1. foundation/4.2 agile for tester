@@ -1,0 +1,100 @@
+
+##  🔶 1. Understanding a User Story (The Heart of Agile Work)
+A User Story describes a feature from the end-user’s perspective.
+
+📌 Standard Format:
+As a [type of user], I want [goal] so that [reason].
+
+🧠 Example:
+As a registered user, I want to reset my password so that I can regain access to my account.
+
+🔍 What Testers Must Do:
+Step	                                     Description
+Understand the story	              Ask: What is the goal? What should happen?
+Clarify Acceptance Criteria        	These are conditions for the story to be considered “done.”
+Break into test scenarios         	Think: What are the inputs? What should be tested? What’s the happy path? What are edge cases?
+
+## ✅ 2. Writing Test Scenarios and Test Cases from User Stories
+📘 Test Scenario
+High-level idea of what to test.
+
+Example:
+Test the "Forgot Password" feature for valid and invalid email inputs.
+
+📗 Test Case (Detailed Steps)
+A step-by-step breakdown with expected results.
+
+Step	Description
+1	Go to Login page
+2	Click "Forgot Password"
+3	Enter registered email
+4	Click Submit
+✅ Expected:	Success message + Email sent
+❌ Negative Test:	Show error for invalid/unregistered email
+
+🧠 Tip: Always write positive and negative test cases.
+
+## 🔧 3. Agile Test Artifacts You Will Create
+Artifact                              	Description
+Test Scenarios	                  Written per user story
+Test Cases	                      Detailed steps with expected results
+Bug Reports	                      Reported when actual ≠ expected
+Test Summary	                    After sprint ends, summarize test coverage & defects
+
+## 🛠 4. Agile Tools You Will Use (Common in Jobs)
+Let’s get you familiar with tools commonly expected in manual testing roles.
+
+💻 JIRA (Most Used Agile Tool)
+You’ll use JIRA to:
+
+View sprint board (To Do → In Progress → Done)
+Assign yourself to a task
+Add comments or ask clarifications
+Log defects (Bugs)
+Track sprint status
+
+We’ll do a JIRA walkthrough in the Advanced section.
+
+🧮 Excel or Google Sheets
+Still used for test case writing or bug tracking when test management tools are not provided.
+
+## 🧾 5. Defect Lifecycle in Agile
+
+Stage                              	Description
+New                         	Bug found and logged by tester
+Assigned                    	Developer is assigned the bug
+In                            Progress	Developer starts fixing it
+Fixed                       	Fix is done, tester retests
+Closed                      	Verified & passed
+Reopened	                   If issue still exists
+
+👉 Defects are usually reported in JIRA, with screenshots, steps to reproduce, severity & priority.
+
+## 👥 6. Communication in Agile Teams (Very Important)
+Testers don’t sit quietly in Agile.
+
+Your role includes:
+1. Daily Standups: Speak what you tested yesterday, what you're testing today, and any blockers.
+2. Clarifying Stories: Ask PO/devs when acceptance criteria are unclear.
+3. Sprint Retrospectives: Share what slowed testing, e.g. late story completion, unclear requirements.
+
+## 📊 7. Agile Metrics Testers Should Know
+Metric	                           Purpose
+Burn-down chart              	Shows work left in the sprint
+Velocity	                    How many story points completed per sprint
+Defect Density	              # of bugs / size of user story
+Test Coverage	                % of features covered by tests
+
+## 🔄 8. Agile Sprint Testing Cycle
+Here's how your 2-week sprint might look:
+
+Day	Tester’s Activity
+Day 1	Sprint planning, read user stories, ask questions
+Day 2–4	Write test cases for ready stories
+Day 4–9	Execute test cases, report bugs, retest
+Day 10	Sprint review – demo working features
+Day 10	Sprint retrospective – discuss testing blockers or wins
+
+\\\
+
+
