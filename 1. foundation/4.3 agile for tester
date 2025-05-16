@@ -1,0 +1,131 @@
+
+## 🔷 1. Agile Testing Quadrants – What to Test & When
+Agile testing isn’t random. The Agile Testing Quadrants help organize testing types based on purpose and focus.
+
+📊 The 4 Quadrants:
+
+Quadrant                                     	Type	                                  Focus	Who Performs It
+Q1	Unit Tests	                    Technology-facing, support development	               Developers
+Q2	Functional Tests	              Business-facing, support team	                         Testers & Devs
+Q3	Exploratory, Usability        	Business-facing, critique product	                        Testers
+Q4	Performance, Security         	Technology-facing, critique product	Specialized           Testers
+
+✅ What you care about as a Manual Tester:
+Mostly Q2 and Q3, i.e., feature testing, exploratory testing, UI, business flow, etc.
+
+\\\
+
+## 🔷 2. Risk-Based Testing in Agile
+Agile sprints are short. You can’t test everything. That’s where Risk-Based Testing comes in.
+
+🎯 What You Do:
+Identify high-risk areas (e.g., payment gateway, login)
+Prioritize testing those over low-risk (like styling)
+Communicate test coverage based on risk decisions
+
+📌 “I couldn’t test X due to time constraints, but based on risk, I prioritized Y.” — This shows leadership.
+
+\\\
+
+## 🔷 3. Shift Left & Continuous Testing
+In Agile, testing begins early—as early as the requirements stage.
+
+👇 What It Means:
+Testers attend backlog grooming and planning
+Review user stories before development starts
+Prepare test scenarios early
+Catch issues in planning (not after code is written)
+
+💡 Benefits:
+Saves time and cost
+Improves quality from Day 1
+
+\\\
+
+## 🔷 4. Agile Ceremonies – Your Role in Each
+Ceremony	                              Purpose	Tester’s                                    Role
+Backlog Grooming	                  Refine stories	                            Ask questions, raise ambiguities
+Sprint Planning	                    Choose stories	                            Estimate test effort, give inputs
+Daily Stand-up	                    Sync progress                             	Speak clearly: Done, Doing, Blockers
+Sprint Review                     	Demo product	                              Give final sign-off input
+Retrospective	                      Improve process                           	Talk about test delays, wins, feedback
+
+🧠 Tip: Always give constructive feedback — e.g., “If we get stories earlier, we can write test cases parallelly.”
+
+\\\
+
+## 🔷 5. Exploratory Testing in Agile
+With short sprints, there's less time to write extensive test cases. Exploratory testing fills this gap.
+
+🧪 How to Do It:
+Understand the story’s purpose
+Use the feature like a real user
+Try invalid data, wrong steps, multiple combinations
+Observe behavior & UI
+
+🛠 Tools to Help:
+
+Test charters (outline what you’ll explore)
+Session-based testing (e.g., 60 min slots)
+
+\\\
+
+## 🔷 6. Defect Triage Meetings
+In Agile, bugs are reviewed quickly so they can be fixed within the sprint.
+
+✅ What Happens:
+Testers, Devs, and Product Owner meet (triage)
+Prioritize defects: High, Medium, Low
+Decide if it must be fixed in this sprint
+
+🎯 Be ready to defend the bug’s severity & impact.
+
+\\\
+
+## 🔷 7. Working with Developers – The Agile Way
+Agile removes the “them vs us” wall between testers and devs.
+
+👥 Collaboration Tips:
+Test early builds, even if UI isn’t final
+Give early feedback, not just bug reports
+Pair test with developers if possible
+Sit with them when debugging
+
+🔄 Quality is a shared responsibility.
+
+\\\
+
+## 🔷 8. Agile Metrics for Testers to Present
+📊 In daily calls or sprint reviews, you can share metrics like:
+
+Test Coverage: 90% of acceptance criteria covered
+
+Bugs Reported vs Resolved
+Regression Failures
+Time taken to retest
+
+This makes you look professional and data-driven, not just task-based.
+
+\\\
+
+## 🔷 9. Real-Life Challenges in Agile Testing
+Here’s what you’ll face—and how to handle it:
+
+Challenge                                            	Solution
+Stories delivered late                            	Raise blocker early
+Acceptance criteria unclear                       	Ask PO early, write assumptions
+Build breaks often	                                Stay in sync with devs, retest fast
+Too many bugs close to sprint end	                  Focus on high severity, communicate risk
+
+\\\
+
+## 🔷 10. How to Stand Out in Agile as a Manual Tester (Even as a Fresher)
+✅ Always review user stories early
+✅ Write clear, reusable test cases
+✅ Log detailed bugs (steps, expected vs actual, screenshot)
+✅ Speak confidently in daily stand-ups
+✅ Learn JIRA, Google Sheets, basic HTML understanding
+✅ Be curious, test beyond what's written
+
+\\\\
+
