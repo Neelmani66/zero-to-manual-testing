@@ -1,0 +1,337 @@
+
+# SDLC – Software Development Life Cycle
+
+This chapter is critical to make you industry-ready — because 90% of a tester’s work depends on SDLC. 
+If you understand how the product is built, you’ll know when and what to test.
+
+### 📌 Chapter Structure:
+We’ll go step by step:
+
+1. What is SDLC?
+2. Why Manual Testers Must Understand SDLC
+3. SDLC Phases (Detailed Breakdown):
+   Requirement Gathering & Analysis
+   Feasibility Study
+   Design
+   Development
+   Testing
+   Deployment
+   Maintenance
+
+4. SDLC Models (Waterfall, Agile, V-Model, Iterative, Spiral)
+5. Tester’s Role in Each Phase (Real-life Activities)
+6. Documents Generated in Each Phase
+
+\\\
+
+### What is SDLC?
+SDLC (Software Development Life Cycle) is the framework that defines the process used by software companies to 
+design, develop, test, deploy, and maintain software systems.
+Think of it as a step-by-step plan for building software efficiently and with fewer bugs.
+
+🔍 Definition:
+"SDLC is a systematic process for building software that ensures the quality and correctness of the software being built."
+
+## Why SDLC is Critical for Manual Testers
+Most beginners think testing is only involved in the “testing phase” — that’s completely wrong.
+
+Here’s why you need to understand the full SDLC:
+
+SDLC Phase                                     	Why It Matters for Testers
+Requirements	                         You need to analyze testable requirements, and identify missing pieces
+Design	                               Understanding design helps you prepare test scenarios early
+Development	                           You can start writing test cases even before coding finishes
+Testing	                               Of course — this is your battlefield
+Deployment                           	 You need to do post-deployment sanity/smoke
+Maintenance	                           You test bug fixes, patches, and version updates
+
+If you don’t understand SDLC:
+
+1. You’ll write late or poor test cases
+2. You’ll miss critical bugs
+3. You’ll be confused when asked what’s your role in the early stages
+
+✅ HR/Managers prefer testers who talk about their involvement from the beginning of SDLC.
+
+\\\
+
+# Lets talk about the development process in detail to understand it fully.
+
+🔸 1. Requirement Gathering & Analysis
+What happens:
+Business Analysts talk to the client
+Collect Business Requirements Document (BRD)
+Conduct stakeholder meetings
+
+Deliverables:
+BRD (Business Requirement Document)
+SRS (Software Requirement Specification)
+
+Tester’s Role:
+Attend requirement review meetings
+Ask questions: What’s testable? What’s unclear?
+Start preparing Requirement Traceability Matrix (RTM)
+
+Real-world Example:
+If the client says:
+“I want a feature to reset password via email.”
+
+As a tester, you should ask:
+What if the email is invalid?
+Should it expire?
+Should it block after 3 failed attempts?
+Can it work on mobile and web?
+
+That’s how critical thinking begins.
+
+
+🔸 2. Feasibility Study
+What happens:
+Technical team checks: Is this possible?
+
+Budget, time, manpower estimated
+
+Tester’s Role:
+Generally low involvement, but senior testers may assist in estimating testing efforts
+
+🔸 3. Design
+
+What happens:
+Architects & designers create system architecture
+High-level design (HLD) and low-level design (LLD) are created
+
+Deliverables:
+HLD: Overall structure (modules, flow)
+LLD: Detailed blueprint of components
+
+Tester’s Role:
+Analyze data flow
+Identify integration points and test entry/exit points
+Prepare test scenarios based on HLD
+
+🔸 4. Development
+What happens:
+Developers write code based on the design
+
+Tester’s Role:
+Start preparing test cases
+Set up test environment
+Perform static testing (review code, documents if permitted)
+
+🔸 5. Testing
+What happens:
+Code is deployed to QA environment
+Testing begins: Smoke, Functional, Integration, Regression, etc.
+
+Tester’s Role:
+Execute test cases
+Log defects
+Retest and close bugs
+Prepare daily QA reports
+
+🔸 6. Deployment
+What happens:
+Code is moved to production environment
+
+Tester’s Role:
+Do production sanity testing
+Validate deployment success
+Raise rollback alerts if needed
+
+🔸 7. Maintenance
+What happens:
+Monitor system performance
+Fix post-production bugs
+Apply patches
+
+Tester’s Role:
+Retest bug fixes
+Perform regression for new builds
+Ensure system stability
+
+\\\
+
+### Now lets understand different types of SDLC models .
+
+🔶 What is an SDLC Model?
+An SDLC Model is simply a method or approach followed by a team to complete each phase of the software development life cycle (requirement → maintenance).
+
+Each company uses a model based on:
+
+Project size & complexity
+Budget
+Timeline flexibility
+Need for customer feedback
+
+As a tester, understanding these models helps you:
+
+Know when you’ll be involved
+Prepare test cases in time
+Plan for early or late-stage testing
+Communicate effectively with devs and stakeholders
+
+
+🧭 List of Most Common SDLC Models:
+
+1. Waterfall Model
+2. V-Model
+3. Iterative Model
+4. Spiral Model
+5. Agile Model (most important)
+6. [Brief] Big Bang & Prototype Model (just awareness)
+
+\\\
+
+🔷 1. Waterfall Model
+Requirement → Design → Development → Testing → Deployment → Maintenance
+
+🔹 Key Points:
+
+Linear and rigid
+Best for small, well-defined projects
+Testing comes late (after development)
+
+🔹 Tester’s Role:
+Gets involved after development
+High chance of missing early bugs
+No flexibility to modify test cases mid-way
+
+🔹 Pros:
+✔ Simple, easy to manage
+✔ Good documentation
+
+🔹 Cons:
+✘ No feedback during development
+✘ Late testing = more costly bug fixes
+✘ Not suitable for evolving projects
+
+🔹 Real Use Case:
+Govt. projects, fixed-scope corporate software
+
+\\
+
+🔷 2. V-Model (Verification & Validation)
+🔹 Flow:
+Every dev phase has a corresponding test phase
+Moves down for development, and up for testing (like a "V")
+
+Requirement    →   Design    → Development
+    ↓                          ↓
+Acceptance Test ← System Test ← Integration Test ← Unit Test
+
+Acceptance Test ← System Test ← Integration Test ← Unit Test
+
+🔹 Tester’s Role:
+Involved early
+Test plans are created parallel to dev phases
+You prepare acceptance, system, integration tests as dev continues
+
+🔹 Pros:
+✔ Early testing → early bug detection
+✔ Quality-focused
+
+🔹 Cons:
+✘ Rigid like Waterfall
+✘ Expensive to change specs once started
+
+🔹 Use Case:
+Projects requiring early risk reduction (like banking systems)
+
+\\
+
+🔷 3. Iterative Model
+→ Requirement → Design → Development → Testing → Feedback → Next Version
+
+Product is built in versions (iterations)
+Feedback is used to improve next cycle
+Each version includes its own testing
+
+🔹 Tester’s Role:
+Write and execute test cases for each version
+Perform regression testing on previous features
+Help in test planning for next iteration
+
+🔹 Pros:
+✔ Feedback-driven
+✔ Fast improvement
+
+🔹 Cons:
+✘ Design issues may appear late
+✘ Integration complexity grows
+
+🔹 Use Case:
+Web applications with evolving features
+
+\\
+
+🔷 4. Spiral Model
+Planning → Risk Analysis → Engineering (dev & test) → Evaluation → Repeat
+
+Combines iterative + risk analysis
+Suitable for large and high-risk projects
+
+🔹 Tester’s Role:
+Perform risk-based testing
+Help create test plans for each cycle
+Give feedback on risk areas found during testing
+
+🔹 Pros:
+✔ Great for risk control
+✔ Flexible with new requirements
+
+🔹 Cons:
+✘ Complex
+✘ Costly
+✘ Not suitable for small projects
+
+🔹 Use Case:
+Healthcare systems, aerospace, fintech products
+
+\\
+
+🔷 5. Agile Model – Most Used Today 🔥
+
+🔹 Flow:
+Product is built in small cycles called sprints (1–4 weeks)
+Each sprint includes:
+1. Planning
+2. Dev
+3. Testing
+4. Review
+Teams work collaboratively: Dev + QA + BA + Product Owner
+Based on the Agile Manifesto (values customer collaboration, working software, flexibility)
+
+Sprint 1 → Sprint 2 → Sprint 3 → …
+
+🔹 Tester’s Role:
+Deep involvement from Day 1
+Write user story-based test cases
+Attend daily standups, sprint reviews
+Do functional, regression, exploratory testing every sprint
+
+🔹 Pros:
+✔ Quick delivery
+✔ Fast feedback
+✔ Changes are easy to accommodate
+✔ Continuous testing and improvement
+
+🔹 Cons:
+✘ High pressure
+✘ Poor documentation sometimes
+✘ Needs discipline to work well
+
+🔹 Use Case:
+Startups, SaaS companies, ecommerce apps (e.g., Swiggy, Amazon)
+
+\\
+
+⚡ Quick Comparison Table: 
+Model	                                             Tester Involvement	                  Flexibility	                               Use Case
+Waterfall                                              	Late	                             Low	                            Small, fixed-scope projects
+V-Model	                                                Early	                             Low	                            Secure, quality-focused apps
+Iterative                                             	Medium	                           Medium	                          Mid-size evolving apps
+Spiral	                                                Medium + Risk-based	               High	                            High-stakes large systems
+Agile	                                                  Continuous	                       Very High	                      Most modern IT companies
+
+\\\
+
