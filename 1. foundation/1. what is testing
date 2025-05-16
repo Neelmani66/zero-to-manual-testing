@@ -1,1 +1,28 @@
 
+# 🧪 What is Software Testing? 
+Software Testing is the process of verifying and validating a software application or system to check whether it meets the business and technical requirements that guided its design and development. 
+It ensures that the application works as expected and is free of defects that could impact the end-user or business.
+
+#✅ Verification vs Validation
+Term                               	Meaning                             	Example
+Verification        	Are we building the product right?	          Did we follow the correct design/specification?
+Validation	          Are we building the right product?           	Does the app solve the real user problem?
+
+# 💡 Why Testing Is NOT Just About “Finding Bugs”
+Software testing goes beyond bugs. It covers:
+
+1. Functionality
+2. Performance
+3. Security
+4. Usability
+5. Compatibility
+
+Compliance with regulations (e.g., GDPR)
+
+Without testing, even small bugs can lead to:
+
+🔴 Financial losses (e.g., a failed transaction system)
+🔒 Data leaks (e.g., login bypass vulnerability)
+😡 Poor user experience (e.g., app crashing repeatedly)
+🚫 Legal issues (e.g., accessibility violations)
+
